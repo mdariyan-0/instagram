@@ -12,7 +12,7 @@ export default function LoginPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post("https://insta-backend-764787928165.asia-south1.run.app/login", {
         username,
         password,
       });
